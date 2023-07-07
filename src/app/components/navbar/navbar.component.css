@@ -1,0 +1,96 @@
+
+.custom-nav {
+    border-bottom: 1px solid #F7F8FD;
+    padding: 0;
+}
+
+.custom-nav > .container-fluid {
+    height: 80px;
+}
+
+.navbar-brand{
+    font-size: 2em;
+    margin-right: 30px;
+}
+
+.nav-link {
+    margin-left: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+.nav-right {
+    width: 120px;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    border: 1px solid hsl(26, 100%, 55%);
+}
+
+.cart-icon {
+    position: relative;
+    z-index: 1000;
+}
+
+.cart {
+    position: absolute;
+    min-height: 240px;
+    margin-top: 20px;
+    width: 300px; 
+    right: 0;
+    background-color: white;
+    transform: translateX(30%);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    display: none;
+}
+
+.cart > button {
+    float: right;
+    margin: 5px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.cart-top {
+    border-bottom: 1px solid #F7F8FD;
+}
+
+.cart-body > .card {
+    flex-direction: row;
+    font-size: 13px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.cart-body > .card img {
+    width: 30%;
+    height: auto;
+}
+
+.cart-dlt-btn {
+    outline: 0;
+    border: 0;
+    background-color: white;
+}
+
+.checkout-btn {
+    background-color: hsl(26, 100%, 55%);
+    outline: 0;
+    border: 0;
+}
+
+.checkout-btn:active {
+    background-color: rgba(255, 125, 66, 0.5);
+}

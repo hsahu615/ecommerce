@@ -1,0 +1,37 @@
+<div class="product-details">
+    <div class="row">
+        <div class="col-md-4 product-images">
+            <div class="mb-3 ">
+                <img class="img-fluid rounded" [src]="mainImageSrc" />
+            </div>
+            <div class="my-3 row justify-content-between">
+                <div class="col-md-3"><a (click)="smallToLargeImageSrc(0)"><img class="img-fluid product-subimages rounded" src="../../../assets/images/image-product-1-thumbnail.jpg"/></a></div>
+                <div class="col-md-3"><a (click)="smallToLargeImageSrc(1)"><img class="img-fluid product-subimages rounded" src="../../../assets/images/image-product-2-thumbnail.jpg"/></a></div>
+                <div class="col-md-3"><a (click)="smallToLargeImageSrc(2)"><img class="img-fluid product-subimages rounded" src="../../../assets/images/image-product-3-thumbnail.jpg"/></a></div>
+                <div class="col-md-3"><a (click)="smallToLargeImageSrc(3)"><img class="img-fluid product-subimages rounded" src="../../../assets/images/image-product-4-thumbnail.jpg"/></a></div>
+            </div>
+        </div>
+        <div class="col-md-7 p-5 product-description-box">
+            <p class="theme-primary text-bold">SNEAKER COMPANY</p>
+            <h1 class="text-bold text-large product-heading">Fall Limited Sneakers</h1>
+            <p class="product-description theme-secondary">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+                they'll withstand everything the weather can offer.
+            </p>
+            <div class="my-2"><h3 class="price-tag d-inline text-bold">$125.00</h3><span class="discount-percentage mx-2 px-2">50%</span></div>
+            <h6 class="discounted-price-tag text-bold theme-secondary">$250.00</h6>
+
+            <div class="product-controls row mt-5 align-items-center">
+                <div class="col-md-4">
+                    <div class="row align-items-center">
+                        <button (click)="decrement()" class="item-count-button col-md-3 text-center theme-primary h3">-</button>
+                        <div class="col-md-6 text-center item-count">{{itemCount}}</div>
+                        <button (click)="increment()" class="item-count-button col-md-3 text-center theme-primary h3">+</button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <button class="w-100 btn btn-primary add-cart-btn" (click)="addToCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
